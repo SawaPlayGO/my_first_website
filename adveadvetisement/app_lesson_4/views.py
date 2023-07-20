@@ -1,6 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-def example(request):
-    return HttpResponse('Домашка по 4 занятию')
+def top_sellers(request):
+    return render(request, 'top-sellers.html')
+
+def marmelads(request):
+    return render(request, 'index.html')
+
+def logining(request):
+    return render(request, 'logining.html')

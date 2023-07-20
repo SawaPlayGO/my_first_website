@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Privet{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <table>
+        <table>
+    <colgroup>
+    <col span="2" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+    <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+    </colgroup>
+            <tr>
+              <th>ТОП</th>
+              <th>Имя продовца</th>
+              <th>Заработано</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Мармеладный мастер</td>
+              <td>200 000 тыс. руб.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Король мармеландии</td>
+              <td>150 000 тыс. руб.</td>
+            </tr>
+          </table>
+    {% endblock %}
+</body>
+</html>
